@@ -19,7 +19,7 @@
     height: inherit;
     position: fixed;
     inset: 0; /* cobre 100% da container, útil para criar sobreposições (overlays), modais, efeitos de fundo, etc.*/
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.988) 15%, rgba(10,12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99));
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.988) 15%, rgba(10,12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     z-index: 0;
 }
 
