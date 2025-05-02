@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+}
+
+header img{
+    width: 70px;
+    height: auto;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+}
