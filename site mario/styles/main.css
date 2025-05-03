@@ -37,12 +37,26 @@ main{
     letter-spacing: 0.3px;
     margin-top: 2em;
 
+    transition: all .5s;
     transform: skew(-10deg);
 
 }
 
 .main_info div a{
     background-color: var(--red);
+}
+
+.main_info div a:hover{
+    color:var(--red);
+    background-color: transparent;
+    border: 1px solid var(--text);
+    transform: translateY(-5px);
+}
+.main_info div button:hover{
+    color: var(--green);
+    border: 1px solid var(--text);
+    transform: translateY(-5px);
+    
 }
 
 .main_info div button{
