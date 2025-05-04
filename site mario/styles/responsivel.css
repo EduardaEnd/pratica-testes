@@ -10,6 +10,7 @@
     #logo_movie{
         display: block;
         margin: auto;
+        margin-bottom: 2em;
         width: 230px;
         
     }
@@ -23,7 +24,7 @@
     }
 
     .main_info p{
-        margin-left: 8%;
+        text-align: center;
         font-size: 16px;
         width: 80vw;
         max-width: 500px;
