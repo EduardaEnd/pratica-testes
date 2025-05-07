@@ -1,0 +1,52 @@
+
+
+h1{
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 60px;
+
+}
+#hole{
+    color: transparent;
+    -webkit-text-stroke: 1px var(--branco);
+    font-weight: 400;
+    font-size: 60px;
+}
+
+#button_title a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+
+
+
+.conteiner{
+    display: flex;
+    background-color:transparent;
+    max-width: 1000px;
+    height: 250px;
+    margin: auto;
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    transform: translateY(90%);
+
+}
+
+.interior{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    margin: 14px;
+}
+
+img{
+    width: 130px;
+    border-radius: 10px;
+}
+
+p{
+    padding: 10px;
+    color: var(--branco);
+    font-size: 14px;
+}
