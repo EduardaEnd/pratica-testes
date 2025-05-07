@@ -19,8 +19,11 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: var(--branco);
+}
+
+#navigation a:hover{
     color: var(--roxo);
-    opacity: .8;
 }
 
 
