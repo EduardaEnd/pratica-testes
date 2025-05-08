@@ -24,17 +24,12 @@ h1{
     font-size: 80px;
 }
 
-
 #hole{
     color: transparent;
     -webkit-text-stroke: 1px var(--branco);
     font-weight: 400;
     font-size: 80px;
 }
-
-
-
-
 
 .conteiner{
     position: fixed;
@@ -50,8 +45,6 @@ h1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
 
 }
-
-
 
 .interior{
     display: flex;
