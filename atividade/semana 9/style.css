@@ -43,6 +43,7 @@ main input{
     margin: auto;
     margin-bottom: 10px;
     padding: 3px;
+    cursor: pointer;
 }
 
 main button{
@@ -54,6 +55,7 @@ main button{
     background: linear-gradient( to right,#4caf50, #2196f3);
     color: white;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 main a{
     text-decoration: none;
