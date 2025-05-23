@@ -1,0 +1,103 @@
+main{
+    display: flex;
+}
+
+main section{
+    width: 50vw;
+    height: 80vh;
+    overflow: hidden;
+    padding: 20px;
+    margin: 10px;
+}
+
+#titulo{
+    margin: 30px;
+    text-align: center;
+}
+
+h1{
+    font-size: 75px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+h2{
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#texto{
+    padding: 5px;
+    margin-top: 4rem;
+}
+#texto h4{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#texto p{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.botoon{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+
+}
+
+button{
+    width: 200px;
+    height: 45px;
+    border-radius: 3px;
+    transform: skew(-10deg);
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#bt1{
+    background-color: var(--vermelho);
+    border: 3px solid var(--vermelho);
+    transition: all .5s;
+}
+#bt2{
+    background-color: transparent;
+    border: 3px solid var(--vermelho);
+    transition: all .5s;
+}
+
+#bt1:hover{
+    transform: translateY(-5px);
+    background-color: transparent;
+    color: var(--vermelhoclean);
+}
+
+#bt2:hover{
+    transform: translateY(-5px);
+    background-color: transparent;
+    color: var(--vermelhoclean);
+    border-style: dashed;
+}
+
+/**/
+
+#trailer{
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: end;
+    transform: translateY(8%);
+}
+
+#trailer iframe{
+    margin-right: 6%;
+}
