@@ -9,7 +9,7 @@ main{
 }
 
 main h1{
-    font-size: 85px;
+    font-size: 80px;
     line-height: 1.1;
 }
 
@@ -22,7 +22,7 @@ main div{
     display: flex;
     align-items: center;
     column-gap: 8px;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .button_smoothie{
@@ -42,6 +42,6 @@ main div:hover .button_smoothie:not(:hover){
 }
 
 .button_smoothie img{
-    width: 120px;
+    width: 100px;
     height: auto;
 }

@@ -2,11 +2,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 
 header img{
-    width: 120px;
+    width: 100px;
     height: auto;
 }
 
