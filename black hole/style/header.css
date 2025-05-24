@@ -24,6 +24,7 @@ header{
     letter-spacing: 2px;
     color: var(--branco);
     margin: 5px;
+    transition: all .4s;
 }
 
 #navigation a:hover{
@@ -51,3 +52,4 @@ header{
     opacity: 1;
     transform: translateY(-5px) scale(1.1);
 }
+

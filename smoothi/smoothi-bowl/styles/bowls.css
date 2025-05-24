@@ -1,0 +1,41 @@
+#bowls{
+    position: fixed;
+    bottom: -980px;
+    right: -920px;
+    z-index: -1;
+}
+
+#bowls img{
+    width: 1800px;
+    height: auto;
+    transition: all .6s;
+}
+#bowls.banana img{
+    transform: rotate(0deg);
+}
+
+#bowls.morango img{
+    transform: rotate(-90deg);
+}
+
+#bowls.kiwi img{
+    transform: rotate(-180deg);
+}
+
+#bowls.mertilho img{
+    transform: rotate(-270deg);
+}
+
+#circulo{
+    position: fixed;
+    bottom: -580px;
+    right: -580px;
+
+    z-index: -2;
+    width: 1100px;
+    height: 1000px;
+    border-radius: 100%;
+    background-color: var(--banana-circle);
+    transition: all .6s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

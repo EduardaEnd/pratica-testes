@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Smoothie Bowl</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" alt="logo" />
+
+      <nav>
+        <a href="#">All Recipes</a>
+        <a href="#">Vegan</a>
+        <a href="#">Gluten-freen</a>
+        <a href="#">Shop</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Sip Your Way to Bliss Taste</h1>
+
+      <p>
+        We're dedicated to bringing you deliciously fresh smoothies, made with
+        love, care, and the finest ingredients.
+      </p>
+
+      <div>
+        <button class="button_smoothie" type="button" onclick="changeSmoothie('banana')">
+          <img src="assets/bowl/banana.png" alt="Smoothie de banana">
+        </button>
+
+        <button class="button_smoothie" type="button" onclick="changeSmoothie('morango')">
+          <img src="assets/bowl/morango.png" alt="Smoothie de morango">
+        </button>
+
+        <button class="button_smoothie" type="button" onclick="changeSmoothie('kiwi')">
+          <img src="assets/bowl/kiwi.png" alt="Smoothie de kiwi">
+        </button>
+
+        <button class="button_smoothie" type="button" onclick="changeSmoothie('mertilho')">
+          <img src="assets/bowl/mertilho.png" alt="Smoothie de mertilho">
+        </button>
+      </div>
+
+    </main>
+    <div id="bowls">
+      <img src="assets/bowls.png" alt="">
+    </div>
+
+    <span id="circulo"></span>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<h1>Sip Your Way to Bliss Taste</h1>
+
+<p>
+  We're dedicated to bringing you deliciously fresh smoothies, 
+  made with love, care, and the finest ingredients.
+</p>
+
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

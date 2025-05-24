@@ -1,0 +1,41 @@
+@import url('header.css');
+@import url('main.css');
+@import url('bowls.css');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #000;
+
+  --mertilho-circle: #FFCBEA;
+  --mertilho-background: #C976A7;
+
+  --kiwi-circle: #ECFFCC;
+  --kiwi-background: #8FB351;
+
+  --morango-circle: #FFE1E2;
+  --morango-background: #FCB1B4;
+
+  --banana-circle: #FFF7CF;
+  --banana-background: #F5DE6E;
+}
+
+body, button, a {
+  color: var(--text);
+  font: 400 1rem "Open Sans", sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding: 64px 120px 0;
+  background-color: var(--banana-background);
+  transition: all .6s;
+}
