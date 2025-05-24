@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
-* {
-  color: aliceblue;
-}
+
 
 header {
     display: flex;
@@ -13,12 +11,62 @@ header {
     font-family: "Abel", sans-serif;
     font-weight: 400;
     font-size: 26px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.151);
+    color: var(--vermelho);
+}
+
+#logo{
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+#logo:hover{
+    transform: scale(1.1);
 }
 
 ul {
     display: flex;
     align-items: center;
     gap: 5rem;
-    list-style: none;
-    border: 2px solid lightcoral;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    color: var(--vermelho);
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+
+li:hover{
+    color: var(--vermelho);
+}
+
+li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--vermelho);
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+}
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#menu{
+    margin-right: 20px;
+    cursor: pointer;
+    
 }

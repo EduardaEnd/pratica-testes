@@ -8,6 +8,7 @@
 :root{
     --vermelho: #860d0d;
     --vermelhoclean: #b30c0c;
+    --branco: #e4d0d0;
 }
 
 *{
@@ -15,4 +16,5 @@
     padding: 0;
     font-family: "Abel", sans-serif;
     box-sizing: border-box;
+    color: var(--branco);
 }
