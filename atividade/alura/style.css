@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+:root {
+    --botao-azul: #167BF7;
+    --botao-azul-hover: #3c92fa;
+    --cinza-secundario: #C0C0C0;
+    --branco-principal: #FFFFFF;
+    --cor-efeito: #3c91fa00;
+    --fonte-size-principal:16px;
+    --fonte-principal: 'Inter', sans-serif;
+}
+ 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ 
+body {
+    background-color: black;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-size-principal);
+    font-weight: 400;
+}
+ 
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 100vw;
+    color: var(--branco-principal);
+}
+ 
+.principal {
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+   
+.container_titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3rem;
+    width: 30rem;
+    margin: auto;
+}
+
+.container_img {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.container_botao {
+    display: block;
+    padding: 1rem ;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    font-size: var(--fonte-size-principal);
+    text-decoration: none;
+    width: 22rem;
+   
+
+}
+
+.botao_secundario {
+    background-color: var(--cor-efeito);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    border: 0.1px solid var(--branco-principal);
+    
+}
+
+.container_aviso {
+    font-size: 11px;
+    color: var(--branco-principal);
+    margin-top: 1rem;
+}
+
+
+.conteiner_terciario{
+    display: flex;
+    flex-flow: row-reverse;
+    align-content: center;
+    align-items: center;
+}
+
+.container_quartenario{
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+
+}
+
+.dispositivo{
+    justify-items: center;
+}
+
+footer{
+    justify-items: center;
+}
+footer > h2{
+    margin: 20px;
+}
