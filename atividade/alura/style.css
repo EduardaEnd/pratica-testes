@@ -23,6 +23,8 @@ body {
     font-family: var(--fonte-principal);
     font-size: var(--fonte-size-principal);
     font-weight: 400;
+    overflow-x: hidden;
+    
 }
  
 .container {
@@ -39,6 +41,7 @@ body {
     background-size: contain;
     align-items: center;
     text-align: center;
+    
 }
    
 .container_titulo {
@@ -52,6 +55,7 @@ body {
 
 .container_img {
     margin: 1rem 0rem 2rem 0rem;
+    
 }
 
 .container_botao {
@@ -75,6 +79,7 @@ body {
     color: var(--branco-principal);
     border: 0.1px solid var(--branco-principal);
     
+    
 }
 
 .container_aviso {
@@ -84,29 +89,93 @@ body {
 }
 
 
-.conteiner_terciario{
-    display: flex;
-    flex-flow: row-reverse;
-    align-content: center;
-    align-items: center;
-}
 
-.container_quartenario{
+
+.container_secundario{
+    height: 600px;
     display: flex;
     flex-flow: row;
     align-content: center;
     align-items: center;
+    align-items: center;
+    justify-content: center;
 }
+
+.container_secundario > div{
+    max-width: 500px;
+    margin: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.conteiner_terciario{
+    height: 600px;
+    display: flex;
+    flex-flow: row-reverse;
+    align-content: center;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner_terciario > div{
+    max-width: 500px;
+    margin: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.botao_terciario{
+    background-color: var(--botao-azul);
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 20px;
+    
+}
+
+.botao_terciario > a{
+    color: var(--branco-principal);
+    font-size: 17px;
+}
+
+.container_quartenario{
+    height: 600px;
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao__titulo{
+    font-size: 48px
+}
+
+.container_quartenario > div{
+    max-width: 500px;
+}
+
 ul{
     display: flex;
     align-items: center;
     text-align: center;
     list-style: none;
+    margin: 20px;
+    font-size: 18px;
+}
+footer li:hover{
+    transform: translateY(-10px);
+}
 
+footer > li:not(:hover){
+    opacity: 0.8;
 }
 
 .dispositivo{
     justify-items: center;
+    align-content: center;
+    height: 500px;
 }
 
 footer{
@@ -117,4 +186,16 @@ footer > h2{
 }
 a{
     text-decoration: none;
+    color: var(--branco-principal);
+}
+
+
+footer > ul{
+    display: flex;
+    gap: 25px;
+}
+
+
+.final{
+    text-align: center;
 }

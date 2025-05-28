@@ -48,6 +48,8 @@ li:hover{
     color: var(--vermelho);
 }
 
+
+
 li::after{
     content: '';
     position: absolute;
