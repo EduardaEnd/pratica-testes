@@ -29,20 +29,89 @@ button > a{
 }
 
 .secao2{
-    border: 2px solid;
+
     display: flex;
     flex-flow: column;
+    justify-items: center;
+    align-items: center;
 }
 
-.secao2 > img{
-    width: 500px;
+.imgens_principal{
+    max-width: 400px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+
+}
+
+.secao2 > article{
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+}
+
+.secao2 > article > div{
+    background-color: var(--cor_cartao_fundo);
+   box-shadow: 0px 0px 7px 1px var(--cor_primaria);
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
 }
 
 .secao3{
-    border: 2px solid;
+
+    text-align: center;
+}
+
+.secao3 > article{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.secao3 > article > div{
+    background-color: var(--cor_cartao_fundo);
+    width: 300px;
+    height: 185px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 2px var(--cor_primaria_escura);
+}
+.secao3 button{
+    background: linear-gradient( 160deg, var(--cor_primaria), var(--cor_primaria_escura));
+    box-shadow: 0px 0px 3px var(--cor_primaria);
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
 }
 
 .secao4{
     border: 2px solid;
+    height: 300px;
+    display: flex;
+}
+
+.inscricao{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border: 2px solid lightcoral;
 }
