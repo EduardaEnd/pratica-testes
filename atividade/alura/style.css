@@ -164,12 +164,13 @@ ul{
     margin: 20px;
     font-size: 18px;
 }
-footer li:hover{
-    transform: translateY(-10px);
+
+footer > li{
+    transition: all 0.4s;
 }
 
-footer > li:not(:hover){
-    opacity: 0.8;
+footer li:hover{
+    transform: translateY(-10px);
 }
 
 .dispositivo{

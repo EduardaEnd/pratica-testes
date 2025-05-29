@@ -1,0 +1,48 @@
+
+.secao1{
+    text-align: center;
+    border: 2px solid;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao1 > h1{
+    font-size: 38px;
+    margin: 10px;
+}
+
+.secao1 > button{
+    background: linear-gradient( 160deg, var(--cor_primaria), var(--cor_primaria_escura));
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+}
+
+button > a{
+    text-decoration: none;
+    color: var(--cor_texto);
+}
+
+.secao2{
+    border: 2px solid;
+    display: flex;
+    flex-flow: column;
+}
+
+.secao2 > img{
+    width: 500px;
+    display: flex;
+}
+
+.secao3{
+    border: 2px solid;
+}
+
+.secao4{
+    border: 2px solid;
+}

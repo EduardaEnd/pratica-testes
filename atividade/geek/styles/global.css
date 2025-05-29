@@ -1,0 +1,27 @@
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font_principal);
+}
+
+:root{
+    --font_principal: 'Orbitron';
+    --cor_fundo: #0d0d0d;
+    --cor_primaria: #00d4ff;
+    --cor_texto:#ffff;
+    --cor_primaria_escura: #0050ff;
+    --cor_cabecalho: #111111;
+    --cor_cartao_fundo:#1a1a1a;
+}
+
+body{
+    background-color: var(--cor_fundo);
+    color: var(--cor_texto);
+}
