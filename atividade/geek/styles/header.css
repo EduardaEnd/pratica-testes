@@ -19,4 +19,10 @@ header > nav{
 header > nav > a{
     text-decoration: none;
     color: var(--cor_texto);
+    transition: all .7s;
+}
+
+header > nav > a:hover{
+    color: var(--cor_primaria_escura);
+    transform: translateY(5px);
 }

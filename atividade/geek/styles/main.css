@@ -1,7 +1,6 @@
 
 .secao1{
     text-align: center;
-    border: 2px solid;
     height: 300px;
     display: flex;
     flex-flow: column;
@@ -21,12 +20,20 @@
     border-radius: 50px;
     border: none;
     font-size: 18px;
+    margin-top: 30px;
+}
+
+button{
+    cursor: pointer;
+    font-family: sans-serif;
 }
 
 button > a{
     text-decoration: none;
     color: var(--cor_texto);
+    font-weight: 300;
 }
+
 
 .secao2{
 
@@ -37,19 +44,34 @@ button > a{
 }
 
 .imgens_principal{
-    max-width: 400px;
+    width: 1000px;
     display: flex;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     gap: 20px;
+    overflow: hidden;
+    transition: all .6s;
+}
 
+.secao2 img{
+    transition: all .6s;
+}
+.secao2 img:hover{
+    transform: scale(1.2);
+
+}
+.secao2{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .secao2 > article{
     display: flex;
     gap: 30px;
     margin: 30px;
+    margin-top: 100px;
 }
 
 .secao2 > article > div{
@@ -74,6 +96,7 @@ button > a{
     gap: 30px;
     justify-content: center;
     margin: 20px;
+    margin-right: 10px;
 }
 
 .secao3 > article > div{
@@ -88,7 +111,13 @@ button > a{
     font-size: 20px;
     border-radius: 25px;
     box-shadow: 0px 0px 8px 2px var(--cor_primaria_escura);
+    transition: all .8s;
 }
+
+.secao3 > article > div:hover{
+    transform: scale(1.1);
+}
+
 .secao3 button{
     background: linear-gradient( 160deg, var(--cor_primaria), var(--cor_primaria_escura));
     box-shadow: 0px 0px 3px var(--cor_primaria);
@@ -100,7 +129,6 @@ button > a{
 }
 
 .secao4{
-    border: 2px solid;
     height: 300px;
     display: flex;
 }
@@ -111,7 +139,43 @@ button > a{
     justify-content: center;
     margin: auto;
     align-items: center;
-    width: 400px;
+    width: 800px;
     height: 200px;
-    border: 2px solid lightcoral;
+}
+
+.inscricao > p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.inscricao > input{
+    height: 35px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.inscricao  > button{
+    width: 300px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient( 160deg, var(--cor_primaria), var(--cor_primaria_escura));
+    margin: 10px;
+    box-shadow: 0px 0px 8px var(--cor_primaria);
+    
+}
+
+.inscricao button:hover{
+    
+}
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
 }
