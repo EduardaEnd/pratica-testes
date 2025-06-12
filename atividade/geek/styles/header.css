@@ -1,0 +1,28 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header>img{
+    width: 150px;
+    height: 90px;
+}
+
+header > nav{
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: var(--cor_texto);
+    transition: all .7s;
+}
+
+header > nav > a:hover{
+    color: var(--cor_primaria_escura);
+    transform: translateY(5px);
+}

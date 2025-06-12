@@ -1,0 +1,223 @@
+
+.secao1{
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao1 > h1{
+    font-size: 38px;
+    margin: 10px;
+}
+
+.secao1 > button{
+    background: linear-gradient( 160deg, var(--cor_primaria), var(--cor_primaria_escura));
+    width: 300px;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 30px;
+    transition: all .7s;
+}
+
+button{
+    cursor: pointer;
+}
+
+.secao1 button > a{
+    font-size: 18px;
+}
+
+button > a{
+    text-decoration: none;
+    color: var(--cor_texto);
+    font-weight: 300;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.secao1 button:hover{
+    background: transparent;
+    box-shadow: inset 0px 0px 4px var(--cor_primaria);
+    transform: scale(1.1);
+    background-clip: text;
+    background-image: linear-gradient( to right, var(--cor_primaria), var(--cor_primaria_escura));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secao2{
+
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.imgens_principal{
+    width: 1000px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    overflow: hidden;
+    transition: all .6s;
+}
+
+.secao2 img{
+    transition: all .6s;
+}
+.secao2 img:hover{
+    transform: scale(1.2);
+
+}
+.secao2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.secao2 > article{
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.secao2 > article > div{
+    background-color: var(--cor_cartao_fundo);
+   box-shadow: 0px 0px 7px 1px var(--cor_primaria);
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.secao3{
+
+    text-align: center;
+}
+
+.secao3 > article{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px;
+    margin-right: 10px;
+}
+
+.secao3 > article > div{
+    background-color: var(--cor_cartao_fundo);
+    width: 300px;
+    height: 185px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 2px var(--cor_primaria_escura);
+    transition: all .8s;
+}
+
+.secao3 > article > div:hover{
+    transform: scale(1.1);
+}
+
+.secao3 button{
+    background: linear-gradient( 160deg, var(--cor_primaria), var(--cor_primaria_escura));
+    box-shadow: 0px 0px 3px var(--cor_primaria);
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    transition: all .8s;
+}
+
+.secao3 button:hover{
+    background: transparent;
+    box-shadow: inset 0px 0px 4px var(--cor_primaria);
+    transform: scale(1.1);
+    background-clip: text;
+    background-image: linear-gradient( to right, var(--cor_primaria), var(--cor_primaria_escura));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secao4{
+    height: 300px;
+    display: flex;
+}
+
+.inscricao{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+}
+
+.inscricao > p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.inscricao > input{
+    height: 35px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.inscricao  > button{
+    width: 300px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient( 160deg, var(--cor_primaria), var(--cor_primaria_escura));
+    margin: 10px;
+    box-shadow: 0px 0px 8px var(--cor_primaria);
+    transition: all .6s;
+}
+
+.inscricao  > button > a{
+    font-size: 18px;
+}
+
+.inscricao button:hover{
+    background: transparent;
+    box-shadow: inset 0px 0px 4px var(--cor_primaria);
+    transform: scale(1.1);
+    background-clip: text;
+    background-image: linear-gradient( to right, var(--cor_primaria), var(--cor_primaria_escura));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--cor_cabecalho);
+}
+
+#linha{
+    border: 1px solid var(--cor_primaria_escura);
+}
