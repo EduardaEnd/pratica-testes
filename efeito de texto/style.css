@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    color: #fff;
+}
+
+.txt_animado{
+    font-size: 45px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.txt_animado p{
+    animation: opacidade 20s steps(15) infinite;
+}
+
+.txt_animado span{
+    position: relative;
+}
+
+.txt_animado span::before{
+    content: "";
+    color: #ff007b;
+    animation: palavras 20s infinite;
+}
+
+.txt_animado span::after{
+    content: "";
+    position: absolute;
+    height: calc(100% + 8px);
+    border-left: 2px solid #ff007b;
+    right: -10px;
+    animation: cursor .8s infinite, digita 20S steps(15) infinite;
+    width: calc(100% + 18px);
+    background-color: #212121;
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #212121;
+    }
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 18px);
+    } 
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "É acreditar em algo";
+    }
+    21%,40%{
+        content: "É ter algo individual";
+    }
+    41%,60%{
+        content: "É almejar um desejo";
+    }
+    61%,80%{
+        content: "É lutar pelo que almeja";
+    }
+    81%,100%{
+        content: "Pelo que você luta?";
+    }
+}
+
+@keyframes opacidade {
+    0%,79%{
+        opacity: 1;
+    }
+    80%, 100%{
+        opacity: 0;
+    }
+}
