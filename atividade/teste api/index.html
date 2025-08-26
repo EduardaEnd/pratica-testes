@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs filmes</title>
+</head>
+<body>
+    <input type="text" id="filme" placeholder="Insira seu filme ">
+    <input type="button" onclick="buscarFilmes()" value="Enviar">
+
+    <div id="resultado">
+    </div>
+
+    <script>
+        async function buscarFilmes() {
+            const filmes = document.getElementById("filme").value
+            const resultado = document.getElementById("resultado")
+            
+            try{
+                const apiKey = "a4b58a17" //SUA API KEY
+
+                const resposta = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(filmes)}&apikey=${apiKey}`)
+
+                const dados = await resposta.json()
+
+                resultado.innerHTML = `
+                <h1>Filme: ${dados.Title} ${dados.Year}</h1>
+                <img src="${dados.Poster}">
+                <p> Genero: ${dados.Genre}</p>
+                `
+            }catch (err) {
+                resultado.innerHTML = 'Erro ao buscar.'
+            }
+
+            //resultado.innerHTML = `${filmes}`
+        }
+    </script>
+</body>
+</html>
